@@ -82,9 +82,9 @@ O limite e a validade não dependem de outro atributo não-chave, apenas da chav
 
 Ferramentas utilizadas: 
 
-PostgreSQL (SGBD - Sistema de Gerenciamento de Banco de Dados)  
+PostgreSQL v. 18.1 (SGBD - Sistema de Gerenciamento de Banco de Dados)  
 
-pgAdmin (interface gráfica para administração e execução dos scripts) 
+pgAdmin 4 (interface gráfica para administração e execução dos scripts) 
 
 Scripts desenvolvidos: 
 
