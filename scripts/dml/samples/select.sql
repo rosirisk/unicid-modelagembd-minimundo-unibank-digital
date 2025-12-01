@@ -14,7 +14,8 @@ ccu.limite,
 ccu.data_validade
 FROM cliente c
 LEFT JOIN conta_universitaria cc ON c.cpf = cc.cpf_cliente 
-LEFT JOIN cartao_credito_universitario ccu ON cc.numero_conta = ccu.numero_conta;
+LEFT JOIN cartao_credito_universitario ccu ON cc.numero_conta = ccu.numero_conta
+ORDER BY c.nome ASC;
 
 --- extrato de transacoes
 SELECT t.id_transacao, 
@@ -25,4 +26,6 @@ t.valor,
 t.data_transacao
 FROM transacao t 
 LEFT JOIN tipo_transacao tt on t.id_tipo= tt.id_tipo 
+ORDER BY t.data_transacao DESC
+LIMIT 10;
 
